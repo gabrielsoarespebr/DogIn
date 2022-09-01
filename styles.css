@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+:root{
+    --roxo: rgb(136, 70, 243);
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1611521178062-d4a7ca75ae8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 19px;
+}
+
+.container-flex{
+    filter: drop-shadow(2px 2px 7px rgb(39, 14, 80));
+}
+
+.container-flex, .inline-box{
+    display: flex;
+}
+
+#logotipo{
+    filter: drop-shadow(3px 3px 0px rgb(54, 20, 110));
+    margin-top: 7px;
+}
+
+h1, h2{
+    color: var(--roxo);
+    text-shadow: 1px 1px 0 rgb(54, 20, 110);
+    margin: 10px 0;
+}
+
+h1{
+    margin-top: -17px;
+}
+
+.leftbox{
+    background-image: url(https://images.unsplash.com/photo-1529472119196-cb724127a98e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=372&q=80);
+    background-size: cover;
+    margin: 10vh 0 10vh 10%;
+    width: 25vw;
+    height: 75vh;
+    text-align: center;
+}
+
+.rightbox{
+    background-color: var(--roxo);
+    margin: 10vh 10% 10vh 0;
+    height: 75vh;
+    width: 55vw;
+    text-shadow: 2px 3px 8px var(--roxo);
+    outline: 8px var(--roxo);
+}
+
+#pet-info{
+    width: 45%;
+    margin: 2px 5px;
+}
+
+.columnB{
+    width: 55%;
+    margin: 2px 5px 10px 0;
+}
+
+form{
+    color: white;
+    text-shadow: 1px 2px 8px #32045c;
+    display: block;
+}
+
+label{
+    display: block;
+    margin-top: 7px;
+}
+
+label[for="photo"], #columnB-firt-label{
+    margin-top: -5px;
+}
+
+input{
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+input[type="radio"],input[type="checkbox"]{
+    width: 0.7rem;
+    height: 0.7rem;
+    font-size: none;
+    width: none;
+}
+
+input[type="submit"]{
+    display: block;
+    margin: 20px auto;
+    width: 60%;
+    height: 2em;
+    font-size: 20px;
+    background-color: rgb(88, 41, 163);
+    color: white;
+    border: white solid 1px;
+}

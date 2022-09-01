@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dog.in: Cadastro</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./favicon.png">
+</head>
+
+<body>
+    <div class="container-flex">
+        <div class="container leftbox">
+            <img id="logotipo" src="./favicon.png" alt="Logotipo dog.in">
+            <h1>dog.in</h1>
+            <h2>a rede social canina</h2>
+        </div>
+        <div class="container rightbox">
+            <form name="cadastro" method="post" action="#">
+                <div class="inline-box">
+                    <fieldset id="pet-info">
+                        <legend>Informações do(a) doguinho(a)</legend>
+                        <label for="photo">Foto:</label><input type="file" id="photo">
+                        <label for="name">Nome:</label><input type="text" id="name"
+                            placeholder="Insira o nome do seu pet" required>
+                        <label for="birthday">Data de nascimento:</label><input type="date" id="birthday"
+                            placeholder="Insira a data de nascimento do seu pet" required>
+                        <label for="breed">Raça:</label><input type="text" id="breed"
+                            placeholder="Insira a raça do seu pet">
+                        <label for="gender">Gênero:</label>
+                        <input type="radio" id="gender" name="gender" value="male">Macho
+                        <input type="radio" id="gender" name="gender" value="female">Fêmea
+                        <label for="behavior">Comportamento:</label>
+                        <input type="checkbox" name="behavior" id="prankish" value="prankish">Treloso(a)
+                        <input type="checkbox" name="behavior" id="calm" value="calm">Calmo(a)
+                        <br>
+                        <input type="checkbox" name="behavior" id="hungry" value="hungry">Esfomeado(a)
+                        <input type="checkbox" name="behavior" id="lazy" value="lazy">Preguiçoso(a)
+                        <br>
+                        <input type="checkbox" name="behavior" id="happy" value="happy">Alegre
+                        <input type="checkbox" name="behavior" id="angry" value="angry">Raivoso(a)
+                    </fieldset>
+                    <div class="columnB">
+                        <fieldset id="person-info">
+                            <legend>Informações do(a) responsável</legend>
+                            <label id="columnB-firt-label" for="name">Nome:</label><input type="text" id="name" placeholder="Insira seu nome"
+                                required>
+                            <label for="email">E-mail:</label><input type="email" id="email"
+                                placeholder="Insira seu email" required>
+                            <label for="city">Cidade:</label><input type="text" id="city"
+                                placeholder="Insira sua cidade" required>
+                        </fieldset>
+                        <div class="buttons">
+                            <input type="submit" value="Cadastrar">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
